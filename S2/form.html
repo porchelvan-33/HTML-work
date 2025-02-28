@@ -6,10 +6,10 @@
     <title>Html form</title>
 </head>
 <body>
-    <!--Html form are used to collect the user input -->
+  
     <fieldset style="width: 700px">
-        <legend>Detail</legend>
-    <form action="test.php" method="post" autocomplete="on" target="_blank" >
+    <legend>Detail</legend>
+    <form action="test.php" method="post" autocomplete="on" target="_blank" novalidate>
         <label for="name">First name:</label>
         <input type ="text" id="name" name="fname" placeholder="First Name" value="prem" required disabled><br> <br>
         <label for="lastname">Last name:</label>  
@@ -65,12 +65,13 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" row="4" col="4" placeholder="Comment"></textarea><br> <br>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="submit">   &nbsp; &nbsp; &nbsp; <input type="reset"><br> <br>
-         <input type=""
+         <input type="text" name="rest">
     </form>
+    </fieldset>
 
 
 
     
-    </fieldset>
+
 </body>
 </html>
